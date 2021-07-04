@@ -1,0 +1,196 @@
+@font-face {
+  font-family: Samim;
+  src: url("../fonts/samim/Samim-FD-WOL.eot");
+  src: url("../fonts/samim/Samim-FD-WOL.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/samim/Samim-FD-WOL.woff2") format("woff2"),
+    url("../fonts/samim/Samim-FD-WOL.woff") format("woff"),
+    url("../fonts/samim/Samim-FD-WOL.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Samim;
+  src: url("../fonts/samim/Samim-Bold-FD-WOL.eot");
+  src: url("../fonts/samim/Samim-Bold-FD-WOL.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/samim/Samim-Bold-FD-WOL.woff2") format("woff2"),
+    url("../fonts/samim/Samim-Bold-FD-WOL.woff") format("woff"),
+    url("../fonts/samim/Samim-Bold-FD-WOL.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Samim;
+  src: url("../fonts/samim/Samim-Medium-FD-WOL.eot");
+  src: url("../fonts/samim/Samim-Medium-FD-WOL.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/samim/Samim-Medium-FD-WOL.woff2") format("woff2"),
+    url("../fonts/samim/Samim-Medium-FD-WOL.woff") format("woff"),
+    url("../fonts/samim/Samim-Medium-FD-WOL.ttf") format("truetype");
+  font-weight: 500;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Samim";
+  margin: 0px;
+  padding: 0px;
+
+  overflow-x: hidden;
+}
+.active {
+  background-color: black !important;
+  border: none;
+}
+.content {
+  background-color: black;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: rgb(190, 173, 14);
+  /* width: 200px; */
+  height: 5px;
+  border-radius: 10%;
+  transform: rotate(270deg);
+  transform-origin: right;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: rgb(190, 173, 14);
+
+  width: 20px;
+  height: 30px;
+}
+
+.example-track {
+  background-color: rgb(190, 173, 14);
+  /* height: 10px;
+	    width: auto;  */
+  height: auto;
+  width: 10px;
+}
+.example-thumb {
+  background-color: rgb(190, 173, 14);
+  color: white;
+  width: 35px;
+  height: 32px;
+
+  text-align: center;
+  line-height: 30px;
+  right: -13px;
+}
+.example-track-1 {
+  background-color: rgb(53, 53, 53);
+}
+.example-thumb.active {
+  background-color: rgb(190, 173, 14) !important;
+}
+.vertical-slider {
+  height: 200px;
+  width: 50px;
+}
+.descrip {
+  transform: rotate(270deg);
+  position: relative;
+  bottom: -20px;
+  right: -20px;
+}
+.calendarContainer {
+  border-radius: 3px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  width: 250px !important;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #343a40 !important;
+}
+.dayWrapper {
+  border: 1px solid #cccccc;
+}
+.dayWrapper.selected button {
+  background-color: rgb(190, 173, 14) !important;
+}
+.select {
+  background-color: rgb(190, 173, 14) !important;
+}
+
+.grade {
+  width: 100px;
+  background-image: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px 50px;
+  position: relative;
+}
+.grade p {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  letter-spacing: -1px;
+
+  text-align: center;
+}
+.calendarContainer .dayWrapper button {
+  height: 30px !important;
+}
+.dayWrapper {
+  height: 30px;
+}
+.heading{
+	margin-bottom: 2px !important;
+}
+.element{
+	height: 300px;
+}
+.img-media{
+
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+.myli{
+	
+color: white !important;
+}
+.myli span{
+	background-color: rgb(190, 173, 14) !important;
+}
+.btn-navigation{
+  position: fixed;
+  top: 65px;
+  right:10px;
+  z-index: 100;
+  display: none;
+  transition:all .3s ease-out;
+}
+.movebtn{
+right: calc(100vw - 40vw);
+}
+
+.before-nav{
+  position: fixed;
+  right: -500px;
+
+height: 110vh;
+z-index: 10;
+  width: calc(100vw - 40vw);
+  transition:all .3s  linear;
+}
+
+
+.displayNavigation{
+
+  display: block ;
+ 
+
+  right: 0px;
+ 
+
+
+  background-color: black !important;
+ 
+}
